@@ -1,5 +1,5 @@
-// Tying article to index.html
-const article = document.querySelector("#messages")
+// Making fragment to attach later
+const fragment = document.createDocumentFragment()
 
 // Create 5 sections for our article
 const msg1 = document.createElement('section')
@@ -23,10 +23,12 @@ msg5.className = "message"
 msg5.textContent = "Ok well drive safe and cya soon!"
 
 // Put the sections on the article
-article.appendChild(msg1)
-article.appendChild(msg2)
-article.appendChild(msg3)
-article.appendChild(msg4)
-article.appendChild(msg5)
+fragment.appendChild(msg1)
+fragment.appendChild(msg2)
+fragment.appendChild(msg3)
+fragment.appendChild(msg4)
+fragment.appendChild(msg5)
 
-console.log(article)
+console.log(fragment)
+
+document.querySelector("#messages").appendChild(fragment)
