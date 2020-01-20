@@ -1,6 +1,5 @@
-// Create an article element
-const article = document.createElement('article')
-article.id = "messages"
+// Tying article to index.html
+const article = document.querySelector("#messages")
 
 // Create 5 sections for our article
 const msg1 = document.createElement('section')
@@ -31,6 +30,3 @@ article.appendChild(msg4)
 article.appendChild(msg5)
 
 console.log(article)
-
-const msgContainer = document.querySelector("#container")
-msgContainer.appendChild(article)
